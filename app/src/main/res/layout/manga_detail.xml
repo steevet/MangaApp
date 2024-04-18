@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/holdsAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" >
+
+            <TextView
+                android:id="@+id/topBox"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/box" />
+
+            <TextView
+                android:id="@+id/mangaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text=""
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mangaCover"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_launcher_foreground"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/mangaAuthor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/mangaCover"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="author"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/mangaDate"
+                    android:text="date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/mangaCover"
+                    android:layout_below="@+id/mangaAuthor"/>
+
+                <TextView
+                    android:id="@+id/mangaDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/mangaCover"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="libra"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/chapterList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

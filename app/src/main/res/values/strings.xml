@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Manga Reader App</string>
+    <string name="home_desc">This button is used to return to the home screen of the app</string>
+    <string name="toggle_desc">This button is used to open/close the menu that provides access to features such as the favourites list</string>
+    <string name="searchButton_desc">This button is used to open/close the search bar</string>
+    <string name="searchBar_desc">This search bar is used to find your manga</string>
+    <string name="mangaInfo">Manga Information</string>
+    <string name="favourites">Favourites List</string>
+    <string name="app_label">n/a</string>
+    <string name="search_hint">Search manga...</string>
+    <string name="themes">Themes</string>
+    <string name="credits">Credits</string>
+    <string name="favouriteTitle">Favourites List</string>
+
+</resources>

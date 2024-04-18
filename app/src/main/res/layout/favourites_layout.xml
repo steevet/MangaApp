@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/holdsAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <TextView
+            android:id="@+id/topBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/box" />
+
+        <TextView
+            android:id="@+id/favouritesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/favouriteTitle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <ListView
+            android:id="@+id/favouritesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
